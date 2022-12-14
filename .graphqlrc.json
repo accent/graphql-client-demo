@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "schema": [
+        "Demo/schema.graphql"
+      ],
+      "documents": [
+        "Demo/**/*.graphql"
+      ]
+    }
+  ]
+}
