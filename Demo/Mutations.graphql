@@ -1,5 +1,0 @@
-query getAllBooks{
-  book{
-    title
-  }
-}

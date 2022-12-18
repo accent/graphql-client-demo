@@ -1,0 +1,37 @@
+﻿query GetAllAuthors{
+    author: allAuthors {   
+        authorId,
+        firstName,
+        lastName
+    }
+}
+
+query GetAllBooks{
+    book: allBooks{
+        bookId,
+        title,
+        isbn
+    }
+}
+
+query GetBook($id: Int!){
+    book: book(id: $id){
+        bookId,
+        isbn,
+        title,
+        authors {
+            author{
+                firstName,
+                lastName
+            }
+        }
+    }
+}
+
+query GetAuthor($id: Int!){
+    author: author(id: $id){
+        authorId,
+        firstName,
+        lastName
+    }
+}

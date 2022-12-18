@@ -1,0 +1,7 @@
+﻿mutation RemoveBook($id: ID!){
+    boolean: removeBook(id: $id)
+}
+
+mutation RemoveAuthor($id: ID!){
+    boolean: removeAuthor(id: $id)
+}
